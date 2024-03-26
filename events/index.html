@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Introduction to JavaScript Events</title>
+</head>
+<body>
+  <!-- Change background color of h1 element on click -->
+  <h1 onclick="changeMyBackground();">Click Me</h1>
+
+  <!-- Change background color of h2 element on mousedown and revert on mouseup -->
+  <h2 onmousedown="changeH2Background();" onmouseup="revertBackground()">Click Me too</h2>
+
+  <!-- On mouse over -->
+  <div onmouseover="changeDivBackground('red');" onmouseout="changeDivBackground('yellow');">
+    Move your mouse over this text, then move it out
+  </div>
+
+  <!-- Form for input -->
+  <form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Display area for result -->
+  <div id="result"></div>
+
+  <!-- Include JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
